@@ -2430,7 +2430,10 @@ async function handleInitialSubmit(e) {
   email = document.getElementById("regEmail").value.trim();
   jobClass = document.getElementById("regClass").value.trim();
   password = document.getElementById("regPassword").value.trim();
+  buttonText = document.getElementById("btnText");
   console.log("submitted skills: ", selectedSkills);
+
+  buttonText.textConten = "Processing...";
 
   if (!userName || !email || !jobClass || !password) {
     alert("Please complete all fields.");
